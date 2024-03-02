@@ -1,0 +1,74 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+.maincontent{
+
+    width: 20%;
+    background-color: aliceblue;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.typebar{
+    background-color: aqua;
+width: 88%;
+height: 4vh;
+border-radius: 7%;
+margin-top: 3%;
+margin-bottom: 3%;
+display: flex;
+}
+#mytext{
+    width: 75%;
+    height: 75%;
+    background-color: white;
+    color: black;
+}
+.buttoncont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: aqua;
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+}
+.showbar{
+    border-radius: 3%;
+    width: 88%;
+    height: 5vh;
+border: 1px solid black;
+margin-bottom: 3%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 2%;
+}
+.done{
+    height: 60%;
+    width: 15%;
+    color: white;
+    cursor: pointer;
+       background-color: black;
+}
+.content{
+    width: 60%;
+    height: 60%;
+    background-color: yellow;
+    /* text-decoration: line-through; */
+}
+.done1{
+    height: 60%;
+    width: 21%;
+    color: white;
+    cursor: pointer;
+       background-color: black;
+}
+
+
