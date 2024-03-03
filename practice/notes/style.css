@@ -1,0 +1,42 @@
+body{
+    background-image: linear-gradient(135deg,#CDA7FF,#A5B8FF);
+}
+.rice{
+    /* height: 60vh; */
+    width: 20vw;
+    /* border: 2px solid black; */
+    margin-top: 5%;
+    margin-left: 5%;
+}
+h2{
+    text-align: center;
+}
+.create{
+    border-radius: 13%;
+    cursor: pointer;
+    color: white;
+    background-color: #6B23B3;
+    height: 35px;
+margin-left: 5%;
+margin-bottom: 5%;
+}
+.nes{margin-top: 4%;
+    position: relative;
+}
+.ch{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.bottomleft{
+    border-radius: 13%;
+    cursor: pointer;
+    color: white;
+    background-color: #6B23B3;
+    /* height: 35px; */
+margin-left: 5%;
+/* margin-bottom: 5%; */
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+}
