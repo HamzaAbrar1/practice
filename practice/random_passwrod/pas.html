@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="passwordgen">
+        <h2>Password generator</h2>
+
+<input type="text" name="password" id="pass" placeholder="click on generator">
+<br>
+<button onclick="func()">generator</button>
+
+<br>
+
+<button onclick="copyf()">copy</button>
+
+    </div>
+<script>
+    Math.floor(Math.random()*10);
+let capital="QWERTYUIOPASDFGHJKLZXCVBNM";
+let small="qwertyuiopasdfghjklzxcvbnm";
+let numbers="1234567890";
+let special="!@#$%^&*()";
+let length=12;
+let passd="";
+let all=capital+small+small+numbers;
+// console.log();
+const func=()=>{
+    let valu=document.getElementById("pass");
+    console.log(valu)
+    valu.value="";
+    if(passd.length>0){
+        passd="";
+    }
+passd=passd+(capital[Math.floor(Math.random()*capital.length)]  );
+
+passd=passd+(small[Math.floor(Math.random()*small.length)]  );
+
+passd=passd+(numbers[Math.floor(Math.random()*numbers.length)]  );
+
+passd=passd+(special[Math.floor(Math.random()*special.length)]  );
+
+while(passd.length<length){
+    passd=passd+(all[Math.floor(Math.random()*all.length)]  );
+}
+// console.log(passd)
+let vas=document.getElementById("pass");
+vas.value=passd;
+
+}
+let pasdsd=document.getElementById("pass");
+const copyf=()=>{
+pasdsd.select();
+document.execCommand("copy");
+}
+// func();
+    
+</script>
+
+
+</body>
+</html>
