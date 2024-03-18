@@ -1,0 +1,55 @@
+.carousel-item img{
+    height: 65vh;
+}
+.navbar{
+    height: 15vh;
+}
+.nav-item{
+    position: relative;
+    bottom: 0px;
+}
+.card{
+    position:relative;
+    overflow: hidden;
+    margin-right: 0.5%;
+    margin-top: 0.5%;
+}
+.card img{
+    transition: all 0.5s ease-in;
+width: 25rem;
+height: 30rem;
+}
+.content23{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+.card .content23:hover{
+    z-index: -1;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    padding-left: 4%;
+}
+
+h5{
+    cursor: pointer;
+}
+a{
+    color: white;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+}
