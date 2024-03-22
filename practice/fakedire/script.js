@@ -1,6 +1,7 @@
 async function fetchAndDisplayData() {
     try {
       let res = await fetch('https://fakestoreapi.com/products');
+     
       let products = await res.json();
   
       const productListElement = document.querySelector('.all');

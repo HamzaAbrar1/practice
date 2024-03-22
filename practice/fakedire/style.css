@@ -19,7 +19,8 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: yellow;
+    background-color: beige;
+    /* background-color: yellow; */
   }
   .title{
     width: 100%;

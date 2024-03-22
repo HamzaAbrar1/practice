@@ -1,8 +1,6 @@
 let d=document.getElementsByClassName('buttoncont')[0];
 console.log(d);
 // addEventListener("")
-
-
 d.addEventListener("click",()=>{
 
 let val=document.getElementById('mytext');
