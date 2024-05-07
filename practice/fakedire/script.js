@@ -4,12 +4,18 @@ async function fetchAndDisplayData() {
      
       let products = await res.json();
   
-      const productListElement = document.querySelector('.all');
+      const productListElement = document.querySelector('.container');
       console.log(productListElement)
+      let rw=document.getElementsByClassName("row")[0];
+      
       products.forEach(
 (product)=>{
 let card=document.createElement('div');
 card.classList.add('card');
+
+let colums=document.createElement('div');
+colums.classList.add("col-md-4");
+
 
 let tit=document.createElement('div');
 tit.innerText=product.title;
@@ -40,12 +46,17 @@ card.appendChild(img);
 // price.classList.add("price");
 // card.appendChild(pric);
 
+
 // console.log(tit.innerText);
-productListElement.appendChild(card);
+
+colums.appendChild(card)
+rw.appendChild(colums)
+// productListElement.appendChild(colums);
 
 
 }
       )
+      productListElement.appendChild(rw)
   
     //   products.forEach((product) => {
     //     const listItem = document.createElement('li');
@@ -61,8 +72,8 @@ productListElement.appendChild(card);
       throw error;
     }
   }
-//   fetchAndDisplayData();
+  fetchAndDisplayData();
   
   // Call the function when the page has loaded
-  document.addEventListener('DOMContentLoaded', fetchAndDisplayData);
+  // document.addEventListener('DOMContentLoaded', fetchAndDisplayData);
   
