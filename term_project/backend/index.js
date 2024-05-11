@@ -20,7 +20,11 @@ app.use(
     express.json()
 );
 app.use(
-    express.urlencoded()
+    express.urlencoded(
+        {
+            extended:false
+        }
+    )
 );
 
 app.use("/users",router);

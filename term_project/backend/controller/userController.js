@@ -1,5 +1,6 @@
 import { User } from "../model/userModel.js";
 
+import { uploadOnCloudinary } from "../utils/cloudinary.js";
 
 const responsed=async(req,res)=>{
 
@@ -10,6 +11,10 @@ const responsed=async(req,res)=>{
 
 
 const Userdetails=async(req,res)=>{
+
+
+    const imageLocalPath = req.file.path; // Assuming single file upload for avatar
+    const image1 = await uploadOnCloudinary(imageLocalPath);
 
 
 const {
@@ -30,6 +35,7 @@ name : name,
 email : email,
 username :username,
 password :password,
+image1:image1
 }
 );
 // const finds=User.findOne(

@@ -16,6 +16,10 @@ type:String
 
     password:{
         type:String
+    },
+
+    image1:{
+        type:String
     }
 },
 
